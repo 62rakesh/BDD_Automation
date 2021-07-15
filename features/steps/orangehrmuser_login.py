@@ -90,8 +90,8 @@ def enter_candidate_contact_info(context, email, ContactNo):
 def click_save_button(context):
     context.driver.find_element_by_id("btnSave").click()
     context.driver.save_screenshot("image.png")
-    image = Image.open("image.png")
-    image.show()
+    # image = Image.open("image.png")
+    # image.show()
     time.sleep(2)
 
 
@@ -99,8 +99,9 @@ def click_save_button(context):
 def candidate_save(context):
     print("The candidate is saved")
     context.driver.save_screenshot("candidate.png")
-    candidate_profile = Image.open("candidate.png")
-    candidate_profile.show()
+    # candidate_profile = Image.open("candidate.png")
+    # candidate_profile.show()
+    context.driver.close()
 
 
 
