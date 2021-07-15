@@ -11,7 +11,7 @@ dashboard_text = 'Dashboard'
 
 @given('I launch Chrome Browser')
 def launchBrowser(context):
-    context.driver = webdriver.Chrome(ChromeDriverManager().install())
+    context.driver = webdriver.Chrome()
 
 
 @when('I open Orangehrm Home page')
