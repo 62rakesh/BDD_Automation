@@ -103,4 +103,4 @@ def candidate_save(context):
     candidate_profile.show()
 
 
-allure_report("D://BDD_Automation//reports")
+
