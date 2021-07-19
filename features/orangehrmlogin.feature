@@ -34,3 +34,9 @@ Feature: OrangeHRM Login
     And Click on the Save button
     Then A candidate must be saved
 
+
+@Step2
+  Scenario: User subscription
+    When User click on the Marketplace button
+    Then User should navigate to the market place page
+

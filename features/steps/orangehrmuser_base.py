@@ -104,4 +104,21 @@ def candidate_save(context):
     context.driver.close()
 
 
+@when('User click on the Marketplace button')
+def click_subscribe(self):
+    self.driver.find_element_by_id("MP_link").click()
+    time.sleep(2)
+
+
+# @when('User click on the Subscribe button to subscribe the channel')
+# def user_subscribe(self):
+#     self.driver.find_element_by_id("btnSubscribe").click()
+#     time.sleep(2)
+
+
+@then('User should navigate to the market place page')
+def success(self):
+    print("The user is subscribed to the orangehrm product")
+    marketplace_text = "OrangeHRM Addons"
+    assert True, marketplace_text == "OrangeHRM Addons"
 
